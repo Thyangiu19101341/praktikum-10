@@ -1,0 +1,40 @@
+/**
+* show the form creating a new resource.
+*
+* @return \Illuminate\Http\Response
+*/
+publick function create()
+{
+
+    //membuat form untuk menambahkan data baru
+    return view ('praktikum10.tugas1create'))
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menambahkan Data kategori...latihan praktikum 10</title>
+    </head>
+    <body>
+        <h2>Menambahkan data kategori></h2>
+
+        <form method="POST" action="/prak10">
+        @csrf()
+        @method('POST')
+        <div class="lxlabel">kategori*</div>
+        <div class="inputext">
+            <input type="text" name="txkat">
+            </div>
+        <div class="txlabel">deskripsi</div>
+        <div class="inputext">
+            <input type="text" name="txdesk">
+        </div>
+        <div class="tombol">
+            <input type="submit"class="btn"name="btnkirim" value=" buat baru">
+        </div>
+        <div class="catatan">
+            *harus diisi
+        </div>
+        </form>
+        </body>
+         </html>
+ 
